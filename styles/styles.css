@@ -1,0 +1,333 @@
+:root {
+    /* Primary */
+
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+
+    /* Neutral */
+
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+
+    /* fonts family/sizes/weights */
+    --Be-Vietnam-Pro: 'Be Vietnam Pro', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+    
+    --fs-50: .5rem;
+    --fs-75: .75rem;
+    --fs-100: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.5rem;
+    --fs-400: 1.875rem;
+    --fs-600: 2.5 rem;
+
+    --fs-button : var(--fs-100);
+    --fw-button : var(--fw-semi-bold);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+ul,ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+}
+a,button {
+  cursor: pointer;
+}
+button,input {
+  border: none;
+  outline: none;
+}
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* utitlity calsses */
+.container {
+  --website-max-width: 1110px;
+  --side-padding: 1.5rem;
+
+
+  width: 90%;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container{
+    width: min(85%, 1110px);
+  }
+}
+
+.primary-button {
+  background-color: var(--Bright-Red);
+  color: var(--Vary-Light-Gray);
+  padding: var(--fs-75) var(--fs-300) ;
+  border-radius: var(--fs-400);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  white-space: nowrap;
+  line-height: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.primary-button:hover {
+  opacity: .7;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
+.padding-block {
+  padding-block: 2rem;
+}
+
+/* general styling ---->>
+
+/* body styles */
+body {
+  /* min-height: 100vh; */
+  font-family: var(--Be-Vietnam-Pro);
+  font-size: var(--fs-100);
+  color: var(--Dark-Blue);
+  height: 200vh;
+}
+body[data-scroll] {
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+/* ------------------------------------------------------- */
+
+
+/* Header styles */
+.overlay[data-overlay] {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(transparent , rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+.primary-header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.Header-wrapper {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* padding-block: 2rem; */
+}
+
+/* logo */
+.logo {
+ min-width: 10rem;
+}
+
+/* navigation links */
+.nav-menu {
+  display: none;
+}
+.primary-nav-list {
+  display: flex;
+  gap: 1rem;
+}
+.primary-nav-list li {
+
+}
+.primary-nav-list li a {
+  color: var(--Dark-Blue);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  white-space: nowrap;
+}
+.primary-nav-list li a:hover {
+  color: var(--Dark-Grayish-Blue);
+  transition: .3s all;
+}
+@media (max-width: 990px) {
+  .primary-nav-list {
+    display: none;
+  }
+  .primary-nav-list[data-visible] {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    inset: 8rem 7.5vw auto auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: white;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+  }
+  .nav-menu {
+    display: block;
+    justify-self: flex-end;
+    cursor: pointer;
+    z-index: 2000;
+  }
+  .icon-hamburger {
+    display: none;
+  }
+  .icon-hamburger[data-visible] {
+    display: block;
+  }
+  .icon-close {
+    display: none;
+  }
+  .icon-close[data-visible] {
+    display: block;
+  }
+
+} 
+@media (max-width: 768px) {
+  .primary-nav-list[data-visible] {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+}
+
+
+/* cta button */
+@media (max-width: 990px) {
+  .Header-wrapper .primary-button {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------------- */
+
+/* Main styles */
+
+/* section hero */
+.hero-section {
+  align-items: center;
+  position: relative;
+}
+.hero-pattern {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 70%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .hero-pattern {
+    top: --20%;
+    width: 115%;
+    left: 15%;
+  }
+}
+
+.hero-section::before {
+
+} 
+
+.hero-text {
+  padding-right: 3rem;
+}
+
+.hero-text h1 {
+
+}
+.hero-text p {
+
+}
+.hero-text .primary-button {
+
+}
+.hero-image {
+
+}
+@media (max-width: 768px) {
+  .hero-text {
+    order: 2;
+  }
+}
+
+
+
+
+
+
+
