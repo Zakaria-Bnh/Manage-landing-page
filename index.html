@@ -11,6 +11,7 @@
     />
     <!-- styling files -->
     <link rel="stylesheet" href="styles/styles.css" />
+
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -29,8 +31,17 @@
         </a>
 
         <div class="nav-menu" aria-controls="primary-nav">
-          <img class='icon-hamburger' src="./images/icon-hamburger.svg" alt="icon-hamburger" data-visible/>
-          <img class="icon-close" src="./images/icon-close.svg" alt="icon-close" />
+          <img
+            class="icon-hamburger"
+            src="./images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            data-visible
+          />
+          <img
+            class="icon-close"
+            src="./images/icon-close.svg"
+            alt="icon-close"
+          />
         </div>
         <ul class="primary-nav-list" role="nav-list" id="primary-nav">
           <li><a href="#">Pricing</a></li>
@@ -43,45 +54,106 @@
       </div>
     </header>
     <main>
-      <section class="hero-section | container padding-block two-columns ">
+      <!-- hero section -->
+      <section
+        class="hero-section | container padding-block two-columns mobile-t-center"
+      >
         <div class="hero-pattern">
-          <img src="images/bg-tablet-pattern.svg" alt="bg-tablet-patter">
+          <!-- <img src="images/bg-tablet-pattern.svg" alt="bg-tablet-patter"> -->
         </div>
         <div class="hero-text">
           <h1>Bring everyone together to build better products.</h1>
-          <p>Manage provides all the functionality your team needs, without 
-            the complexity. Our software is tailor-made for modern digital 
-            product teams.
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
           </p>
           <button class="primary-button">Get started</button>
         </div>
         <div class="hero-image">
-          <img src="images/illustration-intro.svg" alt="illustration-intro">
+          <img src="images/illustration-intro.svg" alt="illustration-intro" />
         </div>
+      </section>
+
+      <!-- manage features section  -->
+      <section
+        class="manage-features | container padding-block two-columns mobile-t-center"
+      >
+        <div class="manage-features-container">
+          <h1 class="features-heading">What's different about Manage?</h1>
+          <p class="manage-features-description">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="features-list-wrapper">
+          <ul class="feature-list-items">
+            <li class="feature-list-item">
+              <div class="feature-title">
+                <span class="feature-number">01</span>
+                <h4 class="feature-title">Track company-wide progress</h4>
+              </div>
+              <p class="feature-description">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-title">
+                <span class="feature-number">02</span>
+                <h4 class="feature-title">Advanced built-in reports</h4>
+              </div>
+              <p class="feature-description">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-title">
+                <span class="feature-number">03</span>
+                <h4 class="feature-title">Everything you need in one place</h4>
+              </div>
+              <p class="feature-description">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials about manage section -->
+      <section class="testimonials-section | padding-block t-center">
+        <h2 class="testimonials-header">What they'be said</h2>
+        <ul class="slide-container">
+          <li class="slide-item">
+            <img class="image-slide" src="/images/avatar-anisha.png" alt="avatar-anisha">
+            <h4 class="">Anisha liam</h4>
+            <p>"we have able to cancet so many other subscriptions since using manage there is more cross channel confusion and everyone is much more focused"</p>
+          </li>
+          <li class="slide-item">
+            <img class="image-slide" src="/images/avatar-richard.png" alt="avatar-richard">
+            <h4 >Anisha liam</h4>
+            <p>"we have able to cancet so many other subscriptions since using manage there is more cross channel confusion and everyone is much more focused"</p>
+          </li>
+          <li class="slide-item">
+            <img class="image-slide" src="/images/avatar-ali.png" alt="avatar-ali">
+            <h4>Anisha liam</h4>
+            <p>"we have able to cancet so many other subscriptions since using manage there is more cross channel confusion and everyone is much more focused"</p>
+          </li>
+        </ul>
+        <button class="primary-button">Get started</button>
       </section>
     </main>
     <!-- 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
 
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
 
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
 
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
 
   What they’ve said
 
@@ -120,6 +192,7 @@
 
   Copyright 2020. All Rights Reserved
  -->
- <script src="app/main.js"></script>
+    <script src="app/main.js"></script>
+
   </body>
 </html>
