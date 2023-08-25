@@ -403,23 +403,27 @@ body p {
   flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
-  margin: 4rem;
+  margin: 4rem 4rem 2rem;
 }
 .slide-item {
   min-width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 0 1.25rem 1rem;
   border-radius: 2rem;
   background-color: var(--Vary-Light-Gray);
 }
 .slide-item .image-slide {
   width: 4rem;
   margin-inline: auto;
-  transform: translateY(-3rem);
+  transform: translateY(-2rem);
+}
+.slide-item h4 {
+  margin-bottom: .5rem;
 }
 @media (min-width: 769px) {
   .slide-item {
-    /* flex: 1; */
+    flex: 1;
     flex-direction: row;
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 500px;
   }
 }
