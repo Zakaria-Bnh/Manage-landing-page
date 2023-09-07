@@ -1,33 +1,33 @@
 :root {
-    /* Primary */
+  /* Primary */
 
-    --Bright-Red: hsl(12, 88%, 59%);
-    --Dark-Blue: hsl(228, 39%, 23%);
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
 
-    /* Neutral */
+  /* Neutral */
 
-    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
-    --Very-Dark-Blue: hsl(233, 12%, 13%);
-    --Very-Pale-Red: hsl(13, 100%, 96%);
-    --Vary-Light-Gray: hsl(0, 0%, 97%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 97%);
 
-    /* fonts family/sizes/weights */
-    --Be-Vietnam-Pro: 'Be Vietnam Pro', sans-serif;
+  /* fonts family/sizes/weights */
+  --Be-Vietnam-Pro: "Be Vietnam Pro", sans-serif;
 
-    --fw-regular: 400;
-    --fw-semi-bold: 500;
-    --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
 
-    --s-50: .5rem;
-    --s-75: .75rem;
-    --s-100: 1rem;
-    --s-200: 1.125rem;
-    --s-300: 1.5rem;
-    --s-400: 1.875rem;
-    --s-600: 2.5rem;
+  --s-50: 0.5rem;
+  --s-75: 0.75rem;
+  --s-100: 1rem;
+  --s-200: 1.125rem;
+  --s-300: 1.5rem;
+  --s-400: 1.875rem;
+  --s-600: 2.5rem;
 
-    --s-button : var(--s-100);
-    --fw-button : var(--fw-semi-bold);
+  --s-button: var(--s-100);
+  --fw-button: var(--fw-semi-bold);
 }
 
 /* Box sizing rules */
@@ -35,7 +35,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
 }
 
 /* Remove default margin */
@@ -49,7 +48,8 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-ul,ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -72,14 +72,16 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a,button {
+a,
+button {
   cursor: pointer;
 }
-button,input {
+button,
+input {
   border: none;
   outline: none;
 }
-/* Make images easier to work with */
+/* Make assets easier to work with */
 img,
 picture,
 svg {
@@ -125,13 +127,12 @@ select {
   --website-max-width: 1110px;
   --side-padding: 1.5rem;
 
-
   width: 90%;
   /* padding-inline: 10%; */
   margin-inline: auto;
 }
 @media (min-width: 769px) {
-  .container{
+  .container {
     width: min(85%, 1110px);
   }
 }
@@ -144,7 +145,7 @@ select {
   cursor: pointer;
   background-color: var(--Bright-Red);
   color: var(--Vary-Light-Gray);
-  padding: var(--s-75) var(--s-300) ;
+  padding: var(--s-75) var(--s-300);
   border-radius: var(--s-400);
   font-size: var(--s-button);
   font-weight: var(--fw-button);
@@ -154,15 +155,15 @@ select {
 }
 .primary-button:hover,
 .primary-button[data-reversed]:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 .primary-button[data-reversed]:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 .primary-button[data-reversed] {
   background-color: var(--Vary-Light-Gray);
   color: var(--Bright-Red);
-  padding: var(--s-75) var(--s-300) ;
+  padding: var(--s-75) var(--s-300);
   border-radius: var(--s-400);
   font-size: var(--s-button);
   font-weight: var(--fw-button);
@@ -210,16 +211,14 @@ body p {
   color: var(--Dark-Grayish-Blue);
 }
 
-
 /* ------------------------------------------------------- */
-
 
 /* Header styles */
 .overlay[data-overlay] {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(transparent , rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   z-index: 1;
 }
 .primary-header {
@@ -235,7 +234,7 @@ body p {
   gap: 1rem;
 }
 .logo {
- min-width: 10rem;
+  min-width: 10rem;
 }
 .nav-menu {
   display: none;
@@ -253,7 +252,7 @@ body p {
 }
 .primary-nav-list li a:hover {
   color: var(--Dark-Grayish-Blue);
-  transition: .3s all;
+  transition: 0.3s all;
 }
 @media (max-width: 990px) {
   .primary-nav-list {
@@ -267,7 +266,7 @@ body p {
     text-align: center;
     inset: 8rem 7.5vw auto auto;
     padding: 2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: white;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -291,13 +290,12 @@ body p {
   .icon-close[data-visible] {
     display: block;
   }
-
-} 
+}
 @media (max-width: 768px) {
   .primary-nav-list[data-visible] {
     width: 80%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 990px) {
@@ -306,15 +304,13 @@ body p {
   }
 }
 
-
 /* ------------------------------------------------- */
 /* Main styles */
 /* section hero */
 .hero-section::before {
-
-  content: '';
+  content: "";
   position: absolute;
-  background-image: url(/images/bg-tablet-pattern.svg);
+  background-image: url(/assets/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-size: 130%;
   width: 110%;
@@ -323,9 +319,9 @@ body p {
   top: -20%;
   right: -25%;
   z-index: -1;
-  background-position: bottom left;  
+  background-position: bottom left;
 }
-@media (min-width: 769px ) {
+@media (min-width: 769px) {
   .hero-section::before {
     width: 49%;
     top: 0;
@@ -337,7 +333,7 @@ body p {
 @media (min-width: 990px) {
   .hero-section::before {
     height: 50%;
-}
+  }
 }
 .hero-text {
   align-self: center;
@@ -357,19 +353,18 @@ body p {
   }
 }
 @media (max-width: 640px) {
-
   .hero-section::after {
-  content: '';
-  position: absolute;
-  background-image: url(../images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 83%;
-  height: 68%;
-  top: 68%;
-  right: -43%;
-  z-index: -1;
-}
+    content: "";
+    position: absolute;
+    background-image: url(../assets/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 83%;
+    height: 68%;
+    top: 68%;
+    right: -43%;
+    z-index: -1;
+  }
 }
 
 /* section manage features */
@@ -399,21 +394,21 @@ body p {
   background-color: var(--Very-Pale-Red);
   margin-right: -100%;
   border-radius: 9999px;
-} 
+}
 .feature-number {
   background-color: var(--Bright-Red);
   color: var(--Vary-Light-Gray);
   font-weight: 400;
   letter-spacing: 1px;
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 2rem;
 }
 .feature-title h4 {
   font-size: 1.125rem;
-  padding: .75rem;
+  padding: 0.75rem;
 }
 .feature-description {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   text-align: start;
 }
 @media (min-width: 769px) {
@@ -439,19 +434,19 @@ body p {
 }
 @media (min-width: 769px) {
   .testimonials-section::before {
-    content: '';
+    content: "";
     position: absolute;
-    HEIGHT: 260%;
+    height: 260%;
     inset: 0;
-    background-image: url(/images/bg-tablet-pattern.svg);
+    background-image: url(/assets/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: 23%;
     background-position: center;
     z-index: -99;
     left: -106%;
     top: -100%;
-}
   }
+}
 
 .testimonials-header {
   font-size: 2rem;
@@ -477,7 +472,7 @@ body p {
   transform: translateY(-2rem);
 }
 .slide-item h4 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 769px) {
   .slide-item {
@@ -507,9 +502,9 @@ body p {
   max-width: 470px;
 }
 .Cta-section-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-image: url(/images/bg-simplify-section-mobile.svg);
+  background-image: url(/assets/bg-simplify-section-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   inset: 0;
@@ -523,9 +518,9 @@ body p {
     justify-content: space-between;
   }
   .Cta-section-wrapper::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url(/images/bg-simplify-section-desktop.svg);
+    background-image: url(/assets/bg-simplify-section-desktop.svg);
     background-position: 60% 50%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -554,10 +549,10 @@ footer {
 }
 .contact-info input {
   flex: 1;
-  padding: var(--s-75) var(--s-300) ;
+  padding: var(--s-75) var(--s-300);
   border-radius: var(--s-400);
   line-height: 1;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   min-width: 50%;
 }
 .useful-links {
@@ -571,7 +566,7 @@ footer {
   flex: 1;
 }
 .useful-links li:not(:last-child) {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 .useful-links a {
   color: var(--Vary-Light-Gray);
@@ -627,4 +622,3 @@ footer {
     flex-direction: column-reverse;
   }
 }
-

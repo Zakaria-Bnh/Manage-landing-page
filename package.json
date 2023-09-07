@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "a11y-slider": "^0.4.22"
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "Manage landing page",
+  "scripts": {
+    "build": "npm run build"
   }
 }
