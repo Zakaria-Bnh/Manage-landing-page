@@ -310,7 +310,7 @@ body p {
 .hero-section::before {
   content: "";
   position: absolute;
-  background-image: url(/assets/bg-tablet-pattern.svg);
+  background-image: url(../assets/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-size: 130%;
   width: 110%;
@@ -356,7 +356,7 @@ body p {
   .hero-section::after {
     content: "";
     position: absolute;
-    background-image: url(/assets/bg-tablet-pattern.svg);
+    background-image: url(../assets/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 83%;
@@ -438,7 +438,7 @@ body p {
     position: absolute;
     height: 260%;
     inset: 0;
-    background-image: url(/assets/bg-tablet-pattern.svg);
+    background-image: url(../assets/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: 23%;
     background-position: center;
@@ -504,7 +504,7 @@ body p {
 .Cta-section-wrapper::before {
   content: "";
   position: absolute;
-  background-image: url(/assets/bg-simplify-section-mobile.svg);
+  background-image: url(../assets/bg-simplify-section-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   inset: 0;
@@ -520,7 +520,7 @@ body p {
   .Cta-section-wrapper::before {
     content: "";
     position: absolute;
-    background-image: url(/assets/bg-simplify-section-desktop.svg);
+    background-image: url(../assets/bg-simplify-section-desktop.svg);
     background-position: 60% 50%;
     background-repeat: no-repeat;
     background-size: 100%;
