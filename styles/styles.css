@@ -581,7 +581,6 @@ body p {
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 /* Style for the avatar image in each slide */
 .slide-item .image-slide {
